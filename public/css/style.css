@@ -1,0 +1,78 @@
+* {
+    margin: 0px auto;
+    align-items: center;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+    border: 5px solid blue;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+
+.linea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.lineabtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 60%;
+    padding-bottom: 20px;
+}
+
+.Datos {
+    padding: 20px;
+    width: 700px;
+}
+
+.campo {
+    width: 480px;
+}
+
+.titulo {
+    color: dimgray;
+}
+.detail {
+    color: blue;
+    text-align: right;
+}
+
+  /* Button */
+  .button, button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 200px;
+  }
+  
+  .button:hover, button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
+  
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }

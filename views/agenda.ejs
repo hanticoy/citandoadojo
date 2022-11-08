@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citando a Dojo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <article class="linea">
+            <h1>Citas Registradas en el Dojo</h1>
+            <table class="Datos">
+                <% for (var x in agendas) { %>
+                    <tr>
+                        <td><b class="titulo"><%= agendas[x].name %></b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><b class="detail"><%= agendas[x].comentario %></b> <br> <%= agendas[x].createdAt %>
+                        </td>
+                    </tr>
+                <% } %>
+                
+            </table>
+        </article>
+        <article  class="lineabtn">
+            <div><button id="volver">Volver!</button></div>
+        </article>
+    </main>
+    <script src="js/script2.js"></script>
+</body>
+</html>

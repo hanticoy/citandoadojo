@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citando a Dojo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main class="contenedor">
+        <article class="linea">
+            <h1>Bienvenido a Registro de Agenda Dojo</h1>
+            <form id="formulario" method="post">
+            <table class="Datos">
+                <tr>
+                    <td><b>Your name(*)</b></td>
+                    <td><input class="campo" type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><b>Comment(*)</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><textarea class="campo" name="comentario" id="comentario" cols="30" rows="10"></textarea></td>
+                </tr>
+            </table>
+            </form>
+        </article>
+        <article>
+            <% for (var x in errores) { %>
+                <h4><%= errores[x] %></h4>
+            <% } %>
+        </article>
+        <article  class="lineabtn">
+            <div><button id="agregar">Agregar Cita!</button></div>
+            <div><button id="citas">Ir a Citas!</button></div>
+        </article>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
